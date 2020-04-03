@@ -1,2 +1,2 @@
 # expfit
-Repo for the Shiny T app expfit
+Repo for the Shiny R app expfit
