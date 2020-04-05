@@ -8,7 +8,7 @@
 #
 
 library(shiny)
-
+library(readr)
 # Define UI for application that draws a histogram
 ui <- fluidPage(
     
@@ -48,7 +48,7 @@ ui <- fluidPage(
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
-    KaiCdata <- read_tsv("KaiC_data.txt")
+    KaiCdata <- read_tsv("../../data/KaiC_data.txt")
     output$KaiCPlot <- renderPlot({
         # generate bins based on input$bins from ui.R
         #x    <- faithful[, 2]
